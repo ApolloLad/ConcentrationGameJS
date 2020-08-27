@@ -1,0 +1,104 @@
+
+
+body{
+  text-align: center;
+  background-color: rgb(245, 223, 164);
+}
+h1{
+  font-size: 50px;
+}
+
+#movesHeader{
+  text-align:center;
+  font-size: 30px;
+}
+
+.gameBoard{
+  padding: 20px;
+  border: 1px solid black;
+  margin: 20px;
+  background: url("../images/table.jpg") no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+.row{
+  text-align: center;
+}
+.card{
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 140px;
+    text-align: center;
+    font-size: 20px;
+    top: 100px;
+    color: rgb(255, 54, 54);
+    background-color: rgb(255, 54, 54);
+    list-style: none;
+    display: inline-block;
+}
+
+.cardValue{
+  position: relative;
+  bottom: 10%;
+  font-size: 45px;
+}
+
+
+
+.card:hover{
+  cursor: pointer;
+  background-color: rgb(255, 156, 156);
+  color:  rgb(255, 156, 156);
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: none;
+    padding: 15px;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .hidden{
+    display: none;
+}
+
+.card.flipped{
+  background-color: yellow;
+  color: black;
+}
+
+.card.matched{
+  background-color: green;
+}
+
+.card.unmatched{
+  background-color: purple;
+}
+
+.card.disabled{
+  pointer-events: none;
+  opacity: .9;
+}
+
+
+
+  
